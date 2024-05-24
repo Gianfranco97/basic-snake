@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: La culebrita
+  productName: Basic Snake
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -629,14 +629,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: La culebrita
+  metroPackageName: Basic Snake
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: La culebrita
+  metroApplicationDescription: Basic Snake
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -708,7 +708,7 @@ PlayerSettings:
   cloudProjectId: ddb8cfc0-9fa9-4b25-ae35-a5b09473fda7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: La culebrita
+  projectName: Basic Snake
   organizationId: gianfranco-manganiello
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
