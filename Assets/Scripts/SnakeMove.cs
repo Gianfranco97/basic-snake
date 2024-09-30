@@ -18,56 +18,54 @@ public class SnakeMove : MonoBehaviour
 
     private void Start()
     {
-        segmets = new List<Transform>();
-        segmets.Add(this.transform);
+        segmets = new List<Transform>
+        {
+            transform
+        };
     }
 
-
-    void Update()
+    private void IncreseSpeed()
     {
-        if (Input.GetKey(KeyCode.LeftArrow) && direction != Vector2.right && !inMovin)
-        {
-            inMovin = true;
-            direction = Vector2.left;
-            transform.rotation = Quaternion.Euler(0, 0, 180);
-        }
+        Time.fixedDeltaTime = Time.fixedDeltaTime * 0.98f;
+    }
 
-        if (Input.GetKey(KeyCode.RightArrow) && direction != Vector2.left && !inMovin)
-        {
-            inMovin = true;
-            direction = Vector2.right;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow) && direction != Vector2.down && !inMovin)
+    public void ChangeDirectionToUp()
+    {
+        if (!inMovin && direction != Vector2.down)
         {
             inMovin = true;
             direction = Vector2.up;
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
+    }
 
-        if (Input.GetKey(KeyCode.DownArrow) && direction != Vector2.up && !inMovin)
+    public void ChangeDirectionToDown()
+    {
+        if (!inMovin && direction != Vector2.up)
         {
             inMovin = true;
             direction = Vector2.down;
             transform.rotation = Quaternion.Euler(0, 0, 270);
         }
+    }
 
-        if (coinsCounter >= 25)
+    public void ChangeDirectionToLeft()
+    {
+        if (!inMovin && direction != Vector2.right)
         {
-            Time.fixedDeltaTime = 0.05f;
+            inMovin = true;
+            direction = Vector2.left;
+            transform.rotation = Quaternion.Euler(0, 0, 180);
         }
-        else if (coinsCounter >= 12)
+    }
+
+    public void ChangeDirectionToRight()
+    {
+        if (!inMovin && direction != Vector2.left)
         {
-            Time.fixedDeltaTime = 0.08f;
-        }
-        else if (coinsCounter >= 6)
-        {
-            Time.fixedDeltaTime = 0.12f;
-        }
-        else if (coinsCounter >= 3)
-        {
-            Time.fixedDeltaTime = 0.15f;
+            inMovin = true;
+            direction = Vector2.right;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -95,6 +93,7 @@ public class SnakeMove : MonoBehaviour
         Transform segment = Instantiate(segmentPrefab);
         segment.position = segmets[segmets.Count - 1].position;
         segmets.Add(segment);
+        IncreseSpeed();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

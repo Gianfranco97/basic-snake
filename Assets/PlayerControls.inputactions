@@ -1,0 +1,94 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "eb06184a-0b70-439c-a19a-5ff8a14a879f",
+            "actions": [
+                {
+                    "name": "changeDirectionUp",
+                    "type": "Value",
+                    "id": "4a30c292-821d-44fb-a1d8-8684eb7de387",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "changeDirectionDown",
+                    "type": "Value",
+                    "id": "40dd98cd-184c-48f6-8313-5518e0a493a5",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "changeDirectionLeft",
+                    "type": "Value",
+                    "id": "3363d325-66b8-450f-a343-9fb5b8f36285",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "changeDirectionRight",
+                    "type": "Value",
+                    "id": "41ee7288-55cb-42d5-9aa1-bfc207d6f235",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f84a84b9-48fd-4c9b-84ac-0dbb9a318adb",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "changeDirectionUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42c67027-efa5-4f4f-abde-6f4b945682b4",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "changeDirectionDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a1d6988-c998-40bd-b809-965aafb073ee",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "changeDirectionLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "095c4506-e1bc-4162-b850-ce7669d8448b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "changeDirectionRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
